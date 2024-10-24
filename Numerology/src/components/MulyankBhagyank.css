@@ -1,0 +1,127 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa; /* Soft background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input[type="date"] {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000; /* Text inside the input box */
+}
+
+input[type="date"]::placeholder {
+    color: #000;
+}
+
+input[type="date"]:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Result cards styling */
+.results {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f0f5ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    width: 320px;
+    padding: 25px;
+    text-align: left;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 10px; /* Space between cards */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.card h2 {
+    font-size: 26px;
+    color: #2196f3;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.card p b {
+    font-weight: bold;
+}
+
+.card p:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light separator */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Make layout responsive */
+@media (max-width: 768px) {
+    .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional padding to fix the upper visibility issue */
+.cks {
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
