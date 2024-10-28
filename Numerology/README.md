@@ -1,8 +1,31 @@
-# React + Vite
+# Numerology Calculator - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Numerology Calculator** helps users discover their **Mulyank** (Root Number) and **Bhagyank** (Destiny Number) by entering their birthdate. This app provides a unique approach to numerology, helping users gain insights into personality, destiny, and life path.
 
-Currently, two official plugins are available:
+Live Demo: [numerologycalc.netlify.app](https://numerologycalc.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshot
+
+![Numerology Calculator UI](image.png)
+
+## Features
+
+- **Calculate Mulyank and Bhagyank**: Enter your birthdate, and the app instantly calculates your Root and Destiny numbers.
+- **Data Insights**: Receive personalized information on the significance of your numbers based on traditional numerology.
+- **React & Vite Powered**: Built using modern technology for fast performance and smooth interactions.
+
+## Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+- **Node.js** (>=14.x recommended)
+- **Git**
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone [repository-url]
+   cd numerology-calculator
